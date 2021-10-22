@@ -1,14 +1,5 @@
 import re
 
-astr = "abcccba"
-
-adict = {
-    "a": "d",
-    "b": "e",
-    "c": "f",
-}
-
-
 def keyword_replace(s, replace_dict):
 
     next = []
@@ -50,6 +41,3 @@ def keyword_replace(s, replace_dict):
         next_str = search(next_str)
 
     return next_str
-
-
-print(keyword_replace(astr, adict))
