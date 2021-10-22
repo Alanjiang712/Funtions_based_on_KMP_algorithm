@@ -3,7 +3,7 @@ import re
 def keyword_replace(s, replace_dict):
 
     next = []
-    next_str = s
+    changed_str = s
 
     def buildNext():
         next.append(0)
@@ -38,6 +38,6 @@ def keyword_replace(s, replace_dict):
 
     for p in replace_dict:
         buildNext()
-        next_str = search(next_str)
+        changed_str = search(changed_str)
 
-    return next_str
+    return changed_str
